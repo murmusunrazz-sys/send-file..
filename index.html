@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Send & Receive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>📁 File Transfer</h2>
+
+<div class="box">
+  <h3>SEND FILE</h3>
+  <input type="file" id="fileInput">
+  <button onclick="sendFile()">Send</button>
+  <p id="sendCode"></p>
+</div>
+
+<div class="box">
+  <h3>RECEIVE FILE</h3>
+  <input type="text" id="codeInput" placeholder="Enter Code">
+  <button onclick="receiveFile()">Receive</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+  <title>File Send & Receive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>📁 File Transfer</h2>
+
+<h3>SEND FILE</h3>
+<input type="file" id="fileInput">
+<button onclick="sendFile()">Send</button>
+
+<p id="codeBox"></p>
+<canvas id="qrCanvas"></canvas> <!-- ✅ QR yahan show hoga -->
+
+<hr>
+
+<h3>RECEIVE FILE</h3>
+<input type="text" id="codeInput" placeholder="Enter 6-digit code">
+<button onclick="receiveFile()">Receive</button>
+
+<!-- QR library -->
+<script src="https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+  <title>File Send & Receive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>📁 File Transfer</h2>
+
+<h3>SEND FILE</h3>
+<input type="file" id="fileInput">
+<button onclick="sendFile()">Send</button>
+<p id="codeBox"></p>
+<canvas id="qrCanvas"></canvas>
+
+<hr>
+
+<h3>RECEIVE FILE</h3>
+<input type="text" id="codeInput" placeholder="Enter 6-digit code">
+<button onclick="receiveFile()">Receive</button>
+
+<br><br>
+<button onclick="startScan()">📷 Scan QR Code</button>
+<div id="reader" style="width:300px;margin:auto;"></div>
+
+<!-- Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js"></script>
+<script src="https://unpkg.com/html5-qrcode"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
